@@ -1,0 +1,2 @@
+# SharePoint Classic Yeoman generator
+SharePoint Classic Yeoman generator using React, Flux, PnPjs, TypeScript, Sass, WebPack, Jest (test), Istanbul (code coverage) and PnP PowerShell for deployment. Working on SP Online and 2016. The project also includes a SP authentication proxy. IE 10+ compatible.
