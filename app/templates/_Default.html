@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title><%= client %> - <%= project %></title>
+
+    <!-- Include SharePoint frameworks -->
+    <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
+    <script type="text/javascript" src="/_layouts/15/init.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.init.js"></script>
+    <script type="text/javascript" src="/_layouts/15/ScriptResx.ashx?name=sp.res&culture=en-us"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.requestexecutor.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.taxonomy.js"></script>
+    <script type="text/javascript" src="/_layouts/15/SP.UserProfiles.js"></script>
+    <!-- <script type="text/javascript" src="/_layouts/15/sp.ui.dialog.js"></script> -->
+    <script type="text/javascript" src="/_layouts/15/1033/initstrings.js"></script>
+    <script type="text/javascript" src="/_layouts/15/1033/strings.js"></script>
+    <script type="text/javascript" src="/_layouts/15/core.js"></script>
+
+    <!-- Include various used frameworks -->
+    <script type="text/javascript" src="/node_modules/core-js/client/core.js"></script>
+    <script type="text/javascript" src="/node_modules/react/umd/react.development.js"></script>
+    <script type="text/javascript" src="/node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="/node_modules/@proactive-as/pnp.vendor/pnp.vendor.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+        }
+    </style>
+
+    <script>
+        var _spPageContextInfo = {};
+        _spPageContextInfo.pageListId = "{06032526-67b3-4d9e-8741-b9f5ae737ac4}";
+        _spPageContextInfo.pageItemId = 2;
+        _spPageContextInfo.serverRequestPath = "/sites/<%= projectLower %>/pages/welcome.aspx";
+        _spPageContextInfo.siteAbsoluteUrl = "https://<%= clientLower %>.sharepoint.com/sites/<%= projectLower %>";
+        _spPageContextInfo.siteServerRelativeUrl = "/sites/<%= projectLower %>";
+        _spPageContextInfo.webServerRelativeUrl = "/sites/<%= projectLower %>";
+        _spPageContextInfo.webTitle = "Test";
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="column-left">
+            <div id="demo-component1"></div>
+        </div>
+        <div class="column-right">
+            <div id="demo-component2"></div>
+        </div>
+    </div>
+    <link href="dist/<%= clientLower %>.<%= projectLower %>.css" rel="stylesheet" />
+    <script type="text/javascript" src="dist/<%= clientLower %>.<%= projectLower %>.js"></script>
+</body>
+
+</html>

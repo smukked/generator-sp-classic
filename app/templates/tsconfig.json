@@ -1,0 +1,24 @@
+﻿{
+    "compilerOptions": {
+        "outDir": "./dist/typings/",
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es2015",
+            "dom",
+            "es2015.collection"
+        ],
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "removeComments": false,
+        "noImplicitAny": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "jsx": "react"
+    }
+}

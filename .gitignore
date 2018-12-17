@@ -1,0 +1,15 @@
+dist
+npm
+bin
+obj
+typings
+*.d.ts
+typings.json
+*.js.map
+node_modules
+*.log
+package/**/*.js
+package/**/*.css
+config/private.json
+reports
+package-lock.json

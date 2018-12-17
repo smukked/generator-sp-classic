@@ -1,0 +1,13 @@
+#container {
+    width: 50%;
+
+    .column-left {
+        float: left;
+        width: 200px;
+    }
+
+    .column-right {
+        float: right;
+        width: 200px;
+    }
+}
