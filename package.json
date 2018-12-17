@@ -21,7 +21,11 @@
     "SP Online",
     "SP 2016"
   ],
-  "author": "ProActive",
+  "author": "SmukkeD",
+  "repository": {
+    "type": "Git",
+    "url": "https://github.com/smukked/generator-sp-classic"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.3",
