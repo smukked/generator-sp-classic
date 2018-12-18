@@ -89,7 +89,7 @@ module.exports = yeoman.Base.extend({
         this.copyTemplate("src/___ClientProject___/Initialize/_Init.tsx");
         this.copyTemplate("src/___ClientProject___/Initialize/Init.scss");
         this.copyTemplate("src/___ClientProject___/Models/PageModel.ts");
-        this.copyTemplate("src/___ClientProject___/Services/__mocks__/___Project___Service.ts");
+        this.copyTemplate("src/___ClientProject___/Services/___mocks__/___Project___Service.ts");
         this.copyTemplate("src/___ClientProject___/Services/___Project___Service.ts");
         this.copyTemplate("src/___ClientProject___/Stores/StateStor.ts");
         
