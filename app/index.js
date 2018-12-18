@@ -8,7 +8,7 @@ var yeoman = require('yeoman-generator'),
 module.exports = yeoman.Base.extend({
     _optionOrPrompt: optionOrPrompt,
 	prompting: function() {
-        this.log(yosay('Welcome to the '+chalk.bgRed.white('ProActive SharePoint Classic') + ' project generator'));
+        this.log(yosay('Welcome to the '+chalk.bgRed.white('SharePoint Classic Extension') + ' project generator'));
 		var done = this.async();
         var config = this.config.getAll();
 		this._optionOrPrompt([
@@ -16,7 +16,7 @@ module.exports = yeoman.Base.extend({
 				type: 'input',
 				name: 'client',
 				message: 'Customer name',
-				default: config.customer || 'ProActive',
+				default: config.customer || 'Client',
                 store: !config.customer
 			},
 			{
@@ -116,10 +116,10 @@ module.exports = yeoman.Base.extend({
         this.copyTemplate('_Default.html');
         this.copyTemplate('_package.json');
         this.copyTemplate('_readme.md');        
-        this.copyRaw('.gitignore');
-        this.copyRaw('api-server.js');
-        this.copyRaw('tsconfig.json');
-        this.copyRaw('tslint.json');
+        this.copyTemplate('_.gitignore.gitignore');
+        this.copyTemplate('_api-server.js');
+        this.copyTemplate('_tsconfig.json');
+        this.copyTemplate('_tslint.json');
         
 	},
     install: function() {
