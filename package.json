@@ -1,6 +1,6 @@
 {
   "name": "generator-sp-classic",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "SharePoint Classic template using React, Flux, PnPjs, TypeScript, Sass, WebPack, Jest (test), Istanbul (code coverage) and PnP PowerShell for deployment. Working on SP Online and 2016. The project also includes a SP authentication proxy. IE 10+ compatible.",
   "main": "app/index.js",
   "keywords": [
