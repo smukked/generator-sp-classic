@@ -1,5 +1,5 @@
 import { AppDispatcher } from '../Dispatcher/Dispatcher';
-import { DemoService } from '../Services/<%= project %>Service';
+import { <%= project %>Service } from '../Services/<%= project %>Service';
 import { StateActionTypes } from "../Constans/StateActionTypes";
 import PageModel from '../Models/PageModel';
 
