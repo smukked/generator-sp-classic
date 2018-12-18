@@ -12,7 +12,7 @@ export const StateActions = {
       isLoading: true
     });
 
-    let pages = await DemoService.getPages(listName);
+    let pages = await <%= project %>Service.getPages(listName);
     AppDispatcher.dispatch({
       actionType: StateActionTypes.GET_PAGES,
       pages: pages
