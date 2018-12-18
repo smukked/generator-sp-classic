@@ -100,6 +100,8 @@ module.exports = yeoman.Base.extend({
         this.copyTemplate('_config/_Jest/_jest.config.json');
         this.copyTemplate('_config/_Jest/jest.setup.ts');
         this.copyTemplate('_config/_Jest/jest.trx.processor.js');
+        // - Config/Jest/Mocks
+        this.copyTemplate('_config/_Jest/mocks/_global.mock.ts');
         
         // - Config/WebPack
         this.copyTemplate('_config/_WebPack/_webpack.config.js');
