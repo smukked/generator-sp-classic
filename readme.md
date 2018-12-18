@@ -5,6 +5,11 @@ SharePoint Classic Extension Generator using **React**, **Flux**, **PnPjs**, **T
 
 ### Install 
 ```bash
+npm i generator-sp-classic
+```
+
+### Run
+```bash
 yo sp-classic
 ```
 
