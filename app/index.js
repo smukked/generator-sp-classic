@@ -109,9 +109,6 @@ module.exports = yeoman.Base.extend({
         // - Package
         this.copyTemplate('_package/010_Style_Library/_Deploy.ps1'); 
         this.copyTemplate('_package/020_Link/_Deploy.ps1'); 
-        this.copyTemplate('_package/030_WebPart_Gallery/___Project___Flux.dwp'); 
-        this.copyTemplate('_package/030_WebPart_Gallery/___Project___Pages.dwp'); 
-        this.copyTemplate('_package/030_WebPart_Gallery/_Deploy.ps1'); 
         this.copyTemplate('_package/Install.ps1');
         
         // - Root files
