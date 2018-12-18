@@ -116,7 +116,7 @@ module.exports = yeoman.Base.extend({
         this.copyTemplate('_Default.html');
         this.copyTemplate('_package.json');
         this.copyTemplate('_readme.md');        
-        this.copyTemplate('_.gitignore.gitignore');
+        this.copyTemplate('_.gitignore');
         this.copyTemplate('_api-server.js');
         this.copyTemplate('_tsconfig.json');
         this.copyTemplate('_tslint.json');
