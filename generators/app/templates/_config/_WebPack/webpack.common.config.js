@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
 
@@ -34,17 +34,16 @@ module.exports = {
             filename: "./dist/[name].css",
             chunkFilename: "./dist/[id].css"
         }),
-        new CopyWebpackPlugin([
-            {
-                from: path.resolve(process.cwd() + "/dist/*.*"),
-                to: path.resolve(process.cwd() + "/package/010_Style_Library"),
-                flatten: true
+        new FileManagerPlugin({
+            onEnd: {
+              copy: [
+                {
+                    source: path.resolve(process.cwd() + "/dist/*.*"),
+                    destination: path.resolve(process.cwd() + "/package/010_Style_Library")
+                }
+              ]
             }
-        ],
-            {
-                copyUnmodified: true
-            }
-        )
+        })
     ],
 
     module: {
