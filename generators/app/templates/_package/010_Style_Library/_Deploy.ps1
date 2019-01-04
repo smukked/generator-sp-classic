@@ -5,8 +5,8 @@ $newJsName = ("<%= clientLower %>.<%= projectLower %>" + $global:scriptVersion +
 Rename-Item -Path ".\<%= clientLower %>.<%= projectLower %>.js" -NewName $newJsName
 
 #Add Js
-Add-PnPFile -Path $newJsName -Folder "/Style Library/Client/Scripts" -checkout -publish
-Add-PnPFile -Path ".\<%= clientLower %>.<%= projectLower %>.js.map" -Folder "/Style Library/Client/Scripts" -checkout -publish
+Add-PnPFile -Path $newJsName -Folder "/Style Library/<%= client %>/Scripts" -checkout -publish
+Add-PnPFile -Path ".\<%= clientLower %>.<%= projectLower %>.js.map" -Folder "/Style Library/<%= client %>/Scripts" -checkout -publish
 
 #Add Css
-Add-PnPFile -Path ".\<%= clientLower %>.<%= projectLower %>.css" -Folder "/Style Library/Client/Styles" -checkout -publish
+Add-PnPFile -Path ".\<%= clientLower %>.<%= projectLower %>.css" -Folder "/Style Library/<%= client %>/Styles" -checkout -publish

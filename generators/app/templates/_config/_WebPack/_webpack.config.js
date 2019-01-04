@@ -3,7 +3,7 @@ var commonConfig = require('./webpack.common.config');
 
 module.exports = webpackMerge(commonConfig, {
     entry: {
-        "client.demo": ["./src/<%= client %><%= project %>/Initialize/init.tsx"]
+        "<%= clientLower %>.<%= projectLower %>": ["./src/<%= client %><%= project %>/Initialize/init.tsx"]
     },
 
 	externals: {

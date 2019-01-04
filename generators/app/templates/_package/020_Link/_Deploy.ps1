@@ -2,8 +2,8 @@ $webUrl = (Get-PnPWeb).ServerRelativeUrl.TrimEnd('/')
 
 $scriptName = "<%= clientLower %>.<%= projectLower %>" + $global:scriptVersion + ".js"
 
-$clientJsUrl = $webUrl + "/Style Library/Client/Scripts/" + $scriptName
-$clientStyleUrl = $webUrl + "/Style Library/Client/Styles/<%= clientLower %>.<%= projectLower %>.css?v=" + $global:scriptVersion
+$clientJsUrl = $webUrl + "/Style Library/<%= client %>/Scripts/" + $scriptName
+$clientStyleUrl = $webUrl + "/Style Library/<%= client %>/Styles/<%= clientLower %>.<%= projectLower %>.css?v=" + $global:scriptVersion
 
 ### SHOULD BE MODIFIED TO FIT THE SERVER ###
 
